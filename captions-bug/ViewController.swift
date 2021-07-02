@@ -14,7 +14,7 @@ class ViewController: UIViewController {
 
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        let playerItem = AVPlayerItem(url: URL(string: "http://0.0.0.0:8000/playlist.m3u8")!)
+        let playerItem = AVPlayerItem(url: URL(string: "https://raw.githubusercontent.com/bheinzelman/empty-captions-bug/master/media/playlist.m3u8")!)
         let player = AVPlayer(playerItem: playerItem)
         playerViewController = AVPlayerViewController()
         playerViewController.player = player
